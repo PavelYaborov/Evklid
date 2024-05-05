@@ -1,0 +1,87 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img,svg {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  min-width: 320px;
+  font-family: "Montserrat", sans-serif;
+  font-size: var(--default-fs);
+  line-height: var(--default-lh);
+  color: var(--dark);
+  background-color: var(--white);
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: var(--container-max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
+}
+
+.reset-list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.reset-btn {
+  outline: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.reset-title {
+  margin: 0;
+}
+
+.reset-text {
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  background-color: #FF9900;
+  color: var(--white);
+  border-radius: 16px;
+  transition: background-color var(--short), color var(--short);
+  outline: none;
+}
+
+.btn:hover {
+  background-color: var(--orange);
+}
+
+.btn:focus:not(:hover) {
+  background-color: #FFB84D;
+}
+
+.btn:active {
+  background-color: #E1670E;
+}
+
+.section-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 48px;
+  line-height: 59px;
+  font-weight: var(--regular);
+  color: var(--black);
+}
+

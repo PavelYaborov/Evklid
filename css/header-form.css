@@ -1,0 +1,109 @@
+.form {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  display: none;
+  align-items: center;
+  width: 539px;
+  padding: 16px 13px 16px 32px ;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.12);
+  border-radius: 24px;
+  transform: translateY(-50%);
+  transform-origin: right;
+}
+
+.form.is-opened {
+  display: flex;
+  animation-name: search-open;
+  animation-duration: .3s;
+}
+
+.form.is-closed {
+  animation-name: search-close;
+  animation-duration: .3s;
+}
+
+.search-input {
+  width: 412px;
+  margin-right: 14px;
+  padding-bottom: 5px;
+  border: 0;
+  border-bottom: 1px solid gray;
+}
+
+.header__search-form {
+  position: absolute;
+  margin-top: 5px;
+  height: 24px;
+  right: 66px;
+  top: 16px;
+  fill: none;
+  stroke: #000;
+  stroke-width: 2px;
+  transition: outline .3s ease-in-out, stroke .3s ease-in-out;
+}
+
+.header__search-form:focus {
+  outline: 2px solid #FF9900;
+}
+
+.header__search-form:hover {
+  stroke: #FF9900;
+}
+
+.header__close-form {
+  position: absolute;
+  margin-top: 5px;
+  height: 24px;
+  right: 28px;
+  top: 16px;
+  transition: outline .3s ease-in-out;
+}
+
+.header__close-form:focus {
+  outline: 2px solid #FF9900;
+}
+
+.header__close-form rect,
+.header__close-form circle {
+  transition: fill .3s ease-in-out, stroke .3s ease-in-out;
+}
+
+.header__close-form:hover rect {
+  fill: #FF9900;
+}
+
+.header__close-form:hover circle {
+  stroke: #FF9900;
+}
+
+.header-form__input::placeholder {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #CACACA;
+}
+
+@media (max-width: 800px) {
+  .form {
+    top: 36px;
+    right: 8px;
+    width: calc(539 / 768 * 100%);
+  }
+}
+
+@media (max-width: 576px) {
+  .form {
+    top: 36px;
+    right: 8px;
+    width: calc(320 / 320 * 100%);
+    border-radius: 0px 0px 16px 16px;
+    min-height: 70px;
+    border-radius: 0px 0px 24px 24px;
+  }
+
+  .search-input {
+    width: calc(250 / 320 * 100%);
+  }
+}

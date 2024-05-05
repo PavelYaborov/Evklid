@@ -1,0 +1,39 @@
+:root {
+
+  /*****Шрифты*****/
+
+--regular: 400;
+--medium: 500;
+--semibold: 600;
+--bold: 700;
+--extrabold: 800;
+
+--default-fs: 16px;
+--default-lh: 32px;
+
+/*****Цвета*****/
+
+--dark: #333333;
+--white: #fff;
+--orange: #FF9900;
+--dark-orange: #E1670E;
+--gray: #576b8f;
+--black: #000;
+--light-grey: #CACACA;
+--light-green: #97EE3F;
+
+/*****Контейнер*****/
+
+--container-max-width: 1870px;
+--container-padding: 50px;
+
+/*****Transition*****/
+
+--short: .3s;
+}
+
+@media (max-width: 576px) {
+  :root {
+    --container-padding: 15px;
+  }
+}
